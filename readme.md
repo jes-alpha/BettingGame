@@ -26,7 +26,8 @@ To set up and run the project locally, follow these steps:
 ## Usage
 
 Once the project is running, you can interact with the different endpoints using a tool like Postman, curl or from the
-swagger.
+swagger. Alternatively, you can also use the enclosed `BettingGameAPI.http` file to run requests directly through
+IntelliJ.
 For example, to retrieve the leaderboard, you can make a GET request to:
 
 ```sh

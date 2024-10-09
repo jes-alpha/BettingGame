@@ -1,0 +1,44 @@
+< {%
+    const usernames = ["username1", "username2", "username3", "username4", "username5"];
+    const randomIndex = Math.floor(Math.random() * usernames.length);
+    client.global.set("randomUsername", usernames[randomIndex]);
+%}
+# @name add player
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "name": "name",
+  "surname": "surname",
+  "username": "{{randomUsername}}"
+}
+
+<> 2024-10-10T004204.422.txt
+<> 2024-10-10T004203.422.txt
+<> 2024-10-10T004202.422.txt
+<> 2024-10-10T004201.422.txt
+<> 2024-10-10T004200.422.txt
+
+###
+# @name all players
+GET http://localhost:8080/players
+
+
+###
+# @name BET
+
+POST http://localhost:8080/bet
+Content-Type: application/json
+
+{
+  "username": "{{randomUsername}}",
+  "betAmount":  {{$random.integer(1, 1000)}},
+  "betNumber":  {{$random.integer(1, 10)}}
+}
+
+###
+# @ name leaderboard
+
+GET http://localhost:8080/leaderboard
+
+
