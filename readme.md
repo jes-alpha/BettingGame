@@ -40,10 +40,10 @@ application.
 
 1. After starting the application, open your web browser.
 2. Navigate to:
-    ```sh
+
     [http://localhost:8080/swagger-ui/](http://localhost:8080/swagger-ui/)
-    ```
-3. You will find a list of all available API endpoints and can interact with them directly through the Swagger UI.
+
+4. You will find a list of all available API endpoints and can interact with them directly through the Swagger UI.
 
 ## Features
 
